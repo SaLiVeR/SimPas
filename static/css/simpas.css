@@ -1,0 +1,50 @@
+@import "bootstrap.min.css";
+
+body{
+	padding-top: 55px;
+	padding-bottom: 35px;
+}
+
+li{
+    line-height: 15px;
+}
+
+small{
+	color: #595959;
+}
+
+input, .btn-group, .btn, .dropdown-menu, .breadcrumb{
+	border-radius: 2px !important;
+}
+
+.well, .well-small{
+	border-radius: 0px;
+	box-shadow: none !important;
+}
+
+.navbar-inner{
+	box-shadow: none !important;
+	background-image: none;
+	background: #F5F5F5;
+	border-bottom: 1px #EBEBEB solid;
+}
+
+.desc_border{
+	border-left: 1px #EBEBEB solid; 
+	color: #C2C2C2 !important;
+	text-shadow: 1px 1px 0px #fff !important;
+}
+
+.navbar .nav > li > a{
+	padding: 5px 10px 5px 10px;
+	margin: 6px;
+	background: #fff;
+	border: 1px #E6E6E6 solid;
+	border-radius: 3px;
+}
+
+.navbar .nav > li > a:hover{
+	background: #E37171;
+	border: 1px #E86868 solid;
+	border-radius: 3px;
+}

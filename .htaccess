@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+	RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^id/(.*?)/$ index.php?id=$1 [L]
+	RewriteRule ^id/(.*?)/raw$ index.php?id=$1&raw=1 [L]
+	RewriteRule ^id/(.*?)/raw/syntax_hl$ index.php?id=$1&raw=1&syntax_hl=1 [L]
+</IfModule>
+
+<Files db_conf.php>
+	order allow,deny
+	deny from all
+</Files>
+
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 405 /index.php
+ErrorDocument 406 /index.php
+ErrorDocument 407 /index.php
+ErrorDocument 408 /index.php
+ErrorDocument 409 /index.php
+ErrorDocument 410 /index.php
+ErrorDocument 411 /index.php
+ErrorDocument 412 /index.php
+ErrorDocument 413 /index.php
+ErrorDocument 414 /index.php
+ErrorDocument 415 /index.php
+ErrorDocument 416 /index.php
+ErrorDocument 417 /index.php
+ErrorDocument 500 /index.php
+ErrorDocument 501 /index.php
+ErrorDocument 502 /index.php
+ErrorDocument 503 /index.php
+ErrorDocument 504 /index.php
+ErrorDocument 505 /index.php
